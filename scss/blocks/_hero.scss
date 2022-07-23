@@ -24,6 +24,8 @@
 .hero__link:hover {
   background-color: rgba(104, 135, 236, 0.1);
   color: #003cff;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 50px rgba(183, 183, 183, 0.504);
 }
 
 .hero__link:active {
@@ -39,6 +41,8 @@
 
 .hero__link-top:hover {
   background-color: #003cff;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 50px rgba(113, 113, 113, 0.504);
 }
 
 
