@@ -1,0 +1,147 @@
+.fans {
+  background-color: rgb(255,255,255);
+  background: linear-gradient(172deg, rgba(255,255,255,1) 65%, rgba(241,244,248,1) 65%);
+}
+
+.fans__inner {
+  position: relative;
+  z-index: 50;
+}
+
+.fans__title {
+  font-family: sans-serif;
+  font-size: 31px;
+  line-height: 1.35;
+}
+
+.fans__desc {
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #869ab8;
+}
+
+.fans__img {
+  border-radius: 99% 1.3% 21% 79% / 100% 20% 80% 0% ;
+}
+
+.fans__quote {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.fans__text {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #869ab8;
+}
+
+.fans__info-off {
+  display: none;
+}
+
+.fans__circle {
+  position: absolute;
+  z-index: 777;
+  top: 55%;
+  left: -40px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #335eea;
+}
+
+.fans__circle-off {
+  position: absolute;
+  z-index: 777;
+  top: 55%;
+  right: -40px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #335eea;
+}
+
+.arrow-off {
+  transform: rotate(180deg);
+}
+
+.fans__input:checked ~ label ~ div {
+  .fans__info {
+    display: none;
+  }
+
+  .fans__info-off {
+    display: flex;
+  }
+}
+
+
+.fans__infos {
+  padding-top: 48px;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+@media only screen and (max-width:426px) {
+  .fans__title {
+    max-width: 268px;
+    width: 100%;
+    margin: 0px auto;
+    font-size: 24px;
+  }
+
+  .fans__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fans__box {
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .fans__img {
+    max-width: 260px;
+    width: 100%;
+    height: 212px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .fans__infos {
+    width: 260px;
+    padding: 0;
+  }
+
+  .fans__info {
+    width: 260px;
+    margin: 0px auto;
+  }
+
+  .fans__text {
+    padding-bottom: 32px;
+  }
+
+  .fans__circle {
+    top: 750px;
+    left: 5%;
+  }
+
+  .fans__circle-off {
+    top: 750px;
+    right: 5%;
+  }
+  
+  .fans__info-off {
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    margin: 0px auto;
+  }
+
+  .fans__img-off {
+    width: 260px;
+    height: 212px;
+  }
+}

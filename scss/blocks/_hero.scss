@@ -49,3 +49,57 @@
 .hero__link-top:active {
   opacity: 0.4;
 }
+
+
+@media only screen and (max-width:426px) {
+  .hero__inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero__img-box {
+    max-width: 270px;
+    width: 100%;
+  }
+
+  .hero__img {
+    width: 245px;
+    height: 160px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .hero__desc {
+    font-size: 19px;
+  }
+
+  .hero__info {
+    max-width: 270px;
+    width: 100%;
+  }
+
+  .hero__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__link-box {
+    width: 158px;
+    padding: 0;
+  }
+
+  .hero__arrow {
+    display: none;
+  }
+
+  .hero__links-box {
+    width: 178px;
+    padding: 0;
+  }
+
+  .hero__link {
+    padding: 13px 25px;
+  }
+}

@@ -1,0 +1,170 @@
+.simple {
+  background-color: rgb(241,244,248);
+  background: linear-gradient(180deg, rgba(241,244,248,1) 65%, rgba(27,42,78,1) 65%);
+}
+
+.simple__title {
+  font-family: sans-serif;
+  font-size: 37px;
+}
+
+.simple__desc {
+  max-width: 653px;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 21px;
+  color: #506690;
+}
+
+.simple__position {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 17px;
+  color: #869ab8;
+}
+
+.simple__check {
+  width: 40px;
+  height: 22px;
+  justify-content: start;
+  background-color: #d9e2ef;
+  border: 3px solid #d9e2ef;
+}
+
+.simple__input:checked ~ label{
+  .simple__check {
+    justify-content: end;
+    background-color: #335eea;
+    border: 3px solid #335eea;
+  }
+
+  .simple__number-box {
+    .simple__number {
+      display: none;
+    }
+
+    .simple__number-off {
+      display: block;
+    }
+  }
+}
+
+.simple__label {
+  position: relative;
+  z-index: 5;
+}
+
+.simple__number-box {
+  position: absolute;
+  z-index: 2;
+  bottom: -225px;
+  left: -250px;
+  font-family: sans-serif;
+  font-size: 61px;
+}
+
+.simple__sup {
+  font-family: sans-serif;
+  font-size: 31px;
+}
+
+.simple__number-off {
+  display: none;
+}
+
+.simple__circle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.simple__span {
+  background-color: rgba(51,94,234,.1);
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.simple__text-top {
+  font-family: sans-serif;
+  font-size: 17px;
+  color: #869ab8;
+}
+
+.simple__icons {
+  width: 260px;
+}
+
+.simple__link {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.simple__texts {
+  font-family: sans-serif;
+  font-size: 21px;
+  color: #869ab8;
+}
+
+.simple__links {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 17px;
+  background-color: #d9e2ef;
+  color: #506690;
+  border-radius: 0px 0px 5px 0px;
+  border: none;
+  border-bottom: 2px solid #d9e2ef;
+}
+
+.simple__links:hover {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 17px;
+  background-color: #d9e2ef;
+  color: #506690;
+  border-radius: 0px 0px 5px 0px;
+  border-bottom: 2px solid #d9e2ef;
+}
+
+
+@media only screen and (max-width:426px) {
+  .simple__inner {
+    text-align: center;
+  }
+
+  .simple__title {
+    font-size: 30px;
+    max-width: 268px;
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .simple__desc {
+    max-width: 268px;
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .simple__boxs {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .simple__box {
+    max-width: 268px;
+    width: 100%;
+  }
+
+  .icons__item {
+    padding: 0px 5px 0px 5px;
+    max-width: 268px;
+    width: 100%;
+  }
+
+  .simple__number-box {
+    left: -25px;
+  }
+}

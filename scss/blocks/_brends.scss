@@ -2,3 +2,15 @@
   border-top: 1px solid #f1f4f8;
   border-bottom: 1px solid #f1f4f8;
 }
+
+@media only screen and (max-width:426px) {
+  .brends__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brends__imgs {
+    width: 140px;
+    margin-bottom: 32px;
+  }
+}

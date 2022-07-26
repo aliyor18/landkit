@@ -13,6 +13,7 @@
 }
 
 .header__link {
+  display: inline-block;
   background-color: #335eea;
   font-family: sans-serif;
   font-weight: 600;
@@ -28,4 +29,35 @@
 
 .header__link:active {
   opacity: 0.4;
+}
+
+.header__menu {
+  text-align: end;
+  display: none;
+  width: 100px;
+}
+
+.header__menu-img {
+  width: 28px;
+  height: 28px;
+  margin-top: 7px;
+}
+
+
+@media only screen and (max-width:426px) {
+  .header__box {
+    display: none;
+  }
+
+  .header__link {
+    display: none;
+  }
+
+  .header__menu {
+    display: inline-block;
+  }
+
+  .header__inner {
+    justify-content: space-between;
+  }
 }
